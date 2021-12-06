@@ -19,6 +19,6 @@ A simple project consuming an API to check current currencies prices and convert
 
 ## Project Preview
 
-<img src="./assets/images/preview.png">
+<img src="./assets/images/preview.png" width="320px">
 
 Preview link: <a href="https://diegosouza007.github.io/CurrencyToday">https://diegosouza007.github.io/CurrencyToday</a>
