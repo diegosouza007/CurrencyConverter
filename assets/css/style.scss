@@ -71,5 +71,19 @@
                 margin: 0;
             }
         }
+        #fields {
+            @include flexCenter();
+            span {
+                padding: 0 .5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 433px) {
+    #fields {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }

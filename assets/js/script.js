@@ -18,12 +18,10 @@ fetch(url)
         btcValue = data.BTCUSD.ask;
         usdValue = data.USDBRL.ask;
     })
-
-
-window.onload = function() {
-    coinName.innerHTML = currencies[0];
-    coinValue.innerHTML = btcValue;
-};
+    .then(() => {
+        coinName.innerHTML = currencies[0];
+        coinValue.innerHTML = btcValue;
+    })
 
 userValue.addEventListener('input', () => {
     if (option === 'BTC') {
