@@ -12,39 +12,35 @@
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <!-- Google Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Currency Today - Check and convert some currencies</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/images/icons8-transaction-64.png" type="image/png">
+    <title>Currency Today - Check and convert currencies</title>
 </head>
 
 <body>
 
     <div id="content">
-        <section id="info">
-            <div id="currency-info">
-                <div id="display">
-                    <span>
-                        <h2 id="coin">Bitcoin</h2>
-                    </span>
-                    <span id="value"></span>
-                </div>
-            </div>
-            <div id="converter">
-                <p>Converter</p>
-                <div>
-                    <span><input id="user-value" type="number"></span> =
-                    <span><input readonly id="result" type="number"></span>
-                </div>
+        <section id="currency">
+            <div id="type">
+                <span title="BTC in USD" id="BTC" class="material-icons">currency_bitcoin</span>
+                <span title="USD in BRL" id="USD" class="material-icons">attach_money</span>
             </div>
         </section>
-        <section id="currency">
-            <id id="type">
-                <span id="BTC"></span>
-                <span id="USD"></span>
-                <span id="BRL"></span>
-                <span id="EUR"></span>
-            </id>
+        <section id="info">
+            <div id="display">
+                <span id="coin">Bitcoin</span>
+                <span id="value"></span>
+            </div>
+            <div id="converter">
+                <h2>Converter</h2>
+                <div>
+                    <span><input id="user-value" class="option" type="number"></span> =
+                    <span><input readonly id="result" class="option" type="text"></span>
+                </div>
+            </div>
         </section>
     </div>
 

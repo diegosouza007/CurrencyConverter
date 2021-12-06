@@ -1,1 +1,75 @@
 @import 'base';
+#content {
+    @include flexCenter();
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: $first-color;
+    #currency {
+        #type {
+            background-color: $second-color;
+            @include flexCenter;
+            justify-content: space-evenly;
+            border: .2rem solid $fourth-color;
+            border-radius: 2rem;
+            outline: $fourth-color;
+            overflow: hidden;
+            .material-icons {
+                color: $fourth-color;
+                padding: .5rem;
+                cursor: pointer;
+                &:hover {
+                    background-color: $third-color;
+                }
+            }
+            .material-icons:nth-child(1) {
+                border-right: .1rem solid $fourth-color;
+            }
+        }
+    }
+    #info {
+        display: flex;
+        flex-direction: column;
+        #display {
+            @include flexCenter();
+            flex-direction: column;
+            #coin {
+                font-size: 6rem;
+                color: $fourth-color;
+                text-shadow: 1px 1px 1px $third-color;
+            }
+            #value {
+                font-size: 2.4rem;
+            }
+        }
+    }
+    #converter {
+        @include flexCenter();
+        flex-direction: column;
+        h2 {
+            padding: 2rem 0 1rem 0;
+            color: $fourth-color;
+            text-shadow: 1px 1px 1px $third-color;
+        }
+        div {
+            .option {
+                border: none;
+                background-color: $second-color;
+                color: $fourth-color;
+                padding: .4rem;
+                font-size: 1.2rem;
+                text-align: center;
+                border: .2rem solid $fourth-color;
+                border-radius: 2rem;
+                outline: $fourth-color;
+                overflow: hidden;
+                width: 13rem;
+            }
+            input[type=number]::-webkit-inner-spin-button,
+            input[type=number]::-webkit-outer-spin-button {
+                appearance: none;
+                margin: 0;
+            }
+        }
+    }
+}

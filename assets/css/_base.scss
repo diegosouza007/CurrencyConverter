@@ -8,11 +8,13 @@
 }
 
 :root {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Righteous', cursive;
 }
 
-$first-color: #fff;
-$second-color: #000;
+$first-color: #FECD45;
+$second-color: #2568FB;
+$third-color: #212529;
+$fourth-color: #e9ecef;
 @mixin flexCenter() {
     display: flex;
     justify-content: center;

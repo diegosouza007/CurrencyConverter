@@ -12,6 +12,138 @@
 }
 
 :root {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Righteous', cursive;
+}
+
+#content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FECD45;
+}
+
+#content #currency #type {
+  background-color: #2568FB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border: 0.2rem solid #e9ecef;
+  border-radius: 2rem;
+  outline: #e9ecef;
+  overflow: hidden;
+}
+
+#content #currency #type .material-icons {
+  color: #e9ecef;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+#content #currency #type .material-icons:hover {
+  background-color: #212529;
+}
+
+#content #currency #type .material-icons:nth-child(1) {
+  border-right: 0.1rem solid #e9ecef;
+}
+
+#content #info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#content #info #display {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#content #info #display #coin {
+  font-size: 6rem;
+  color: #e9ecef;
+  text-shadow: 1px 1px 1px #212529;
+}
+
+#content #info #display #value {
+  font-size: 2.4rem;
+}
+
+#content #converter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#content #converter h2 {
+  padding: 2rem 0 1rem 0;
+  color: #e9ecef;
+  text-shadow: 1px 1px 1px #212529;
+}
+
+#content #converter div .option {
+  border: none;
+  background-color: #2568FB;
+  color: #e9ecef;
+  padding: .4rem;
+  font-size: 1.2rem;
+  text-align: center;
+  border: 0.2rem solid #e9ecef;
+  border-radius: 2rem;
+  outline: #e9ecef;
+  overflow: hidden;
+  width: 13rem;
+}
+
+#content #converter div input[type=number]::-webkit-inner-spin-button,
+#content #converter div input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
