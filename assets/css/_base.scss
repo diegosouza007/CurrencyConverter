@@ -20,3 +20,8 @@ $fourth-color: #e9ecef;
     justify-content: center;
     align-items: center;
 }
+
+::placeholder {
+    color: $fourth-color;
+    opacity: 0.4;
+}

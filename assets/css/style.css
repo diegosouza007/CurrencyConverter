@@ -15,6 +15,26 @@
   font-family: 'Righteous', cursive;
 }
 
+::-webkit-input-placeholder {
+  color: #e9ecef;
+  opacity: 0.4;
+}
+
+:-ms-input-placeholder {
+  color: #e9ecef;
+  opacity: 0.4;
+}
+
+::-ms-input-placeholder {
+  color: #e9ecef;
+  opacity: 0.4;
+}
+
+::placeholder {
+  color: #e9ecef;
+  opacity: 0.4;
+}
+
 #content {
   display: -webkit-box;
   display: -ms-flexbox;
